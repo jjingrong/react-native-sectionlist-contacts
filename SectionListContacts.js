@@ -136,7 +136,7 @@ export default class SectionListModule extends Component {
                                         }
                                         return(
                                             <TouchableWithoutFeedback key={'letter_'+index} onPress={()=>{
-                                                this.sectionList.scrollToLocation({animated: this.props.scrollAnimation, itemIndex: 0,sectionIndex: index,viewOffset: (this.props.sectionHeight * (index + 1)) + (this.props.sectionHeaderHeight * index)})
+                                                this.sectionList.scrollToLocation({animated: this.props.scrollAnimation, itemIndex: 0,sectionIndex: index});
                                             }}>
                                                 <View style={[styles.letterItemView,otherStyle]}>
                                                     <Text numberOfLines={0} style={[styles.letterText,this.props.letterTextStyle]}>{item}</Text>
